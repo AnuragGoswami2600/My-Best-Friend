@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="theme-color" content="#fce1ec">
+
+        <title>Little Things About You ♡</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- Floating Hearts -->
+        <div class="background-hearts" id="hearts"></div>
+
+        <main class="container">
+
+            <!-- Welcome Screen -->
+            <section class="screen active" id="welcomeScreen">
+
+                <div class="small-icon">♡</div>
+
+                <p class="tagline">A LITTLE GAME FOR YOU</p>
+
+                <h1>
+                    Little Things<br>
+                    <span>About You</span>
+                </h1>
+
+                <p class="description">
+                    Everyone has a beautiful story.
+                    Let's discover a little more about yours.
+                </p>
+
+                <input type="text" id="personName" placeholder="What should I call you?" maxlength="25"
+                    autocomplete="name">
+
+                <button class="main-btn" id="startBtn">
+                    Start the Journey ♡
+                </button>
+
+                <p class="footer-text">
+                    Made with a little curiosity and lots of love.
+                </p>
+
+            </section>
+
+
+            <!-- Quiz Screen -->
+            <section class="screen" id="quizScreen">
+
+                <div class="quiz-top">
+
+                    <span id="questionNumber">01 / 10</span>
+
+                    <span>♡ Just for you</span>
+
+                </div>
+
+                <div class="progress-track">
+
+                    <div class="progress-fill" id="progress"></div>
+
+                </div>
+
+                <div class="question-icon" id="questionIcon">
+                    🌸
+                </div>
+
+                <p class="question-category" id="category">
+                    YOUR FAVOURITES
+                </p>
+
+                <h2 id="questionText">
+                    What is your favourite place?
+                </h2>
+
+                <div class="options" id="options"></div>
+
+                <div class="custom-answer">
+
+                    <p>Or write your own answer...</p>
+
+                    <input type="text" id="customAnswer" placeholder="Your answer here..." maxlength="150">
+
+                </div>
+
+                <button class="main-btn" id="nextBtn">
+                    Next Question →
+                </button>
+
+            </section>
+
+
+            <!-- Result Screen -->
+            <section class="screen" id="resultScreen">
+
+                <div class="result-heart">♥</div>
+
+                <p class="tagline">
+                    THE LITTLE JOURNEY ENDS
+                </p>
+
+                <h1>
+                    Thank You,<br>
+                    <span id="resultName">Beautiful!</span>
+                </h1>
+
+                <p class="description">
+                    Thank you for sharing a little part
+                    of your beautiful world with me.
+                </p>
+
+                <div class="result-card">
+
+                    <h3>Your Little Answers ♡</h3>
+
+                    <div id="answerSummary"></div>
+
+                </div>
+
+                <h2 class="final-message">
+                    Stay happy. Stay amazing. ✨
+                </h2>
+
+                <button class="main-btn" id="restartBtn">
+                    Play Again ↻
+                </button>
+
+            </section>
+
+        </main>
+
+        <!-- Load JavaScript only once -->
+        <script src="./script.js"></script>
+    </body>
+
+</html>
